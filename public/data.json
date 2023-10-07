@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "category": "Neurology",
+    "details": "Our neurology department offers expert care for conditions related to the nervous system. We have a team of experienced neurologists dedicated to providing comprehensive neurological care ",
+    "image": "/images/neurology.jpg"
+  },
+  {
+    "id": 2,
+    "category": "Cardiology",
+    "details": "We provide advanced cardiology services to keep your heart healthy and strong. Our cardiology department offers a wide range of diagnostic and treatment options for heart-related conditions.",
+    "image": "/images/cardiology.jpg"
+  },
+  {
+    "id": 3,
+    "category": "Pathology",
+    "details": "Our pathology lab offers diagnostic services for a wide range of medical tests and examinations. We ensure accurate and timely results for all your diagnostic needs.",
+    "image": "/images/pathology.jpg"
+  },
+  {
+    "id": 4,
+    "category": "Ophthalmology",
+    "details": "We specialize in eye care, offering comprehensive services for eye-related issues. Our ophthalmologists are dedicated to preserving and improving your vision.",
+    "image": "/images/ophthalmology.jpg"
+  },
+  {
+    "id": 5,
+    "category": "Dermatology",
+    "details": "Our dermatology department provides expert care for skin and hair conditions. We have experienced dermatologists who can help you achieve healthy and radiant skin.",
+    "image": "/images/dermatology.jpg"
+  },
+  {
+    "id": 6,
+    "category": "Orthopedics",
+    "details": "We offer orthopedic services to address musculoskeletal issues and injuries. Our orthopedic specialists provide both surgical and non-surgical solutions to help you regain mobility and reduce pain.",
+    "image": "/images/orthopedics.jpg"
+  }
+]

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate, } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
 
@@ -19,14 +20,24 @@ const Login = () => {
     signin(email, password)
       .then(() => {
         // Login was successful
-        alert("Login successful");
+          Swal.fire({
+            icon: "success",
+            title: "wow great compleate your login",
+           
+          });
         // user navigate
-         nagigate (location?.state ? loactoin.state : '/')
+        nagigate(location?.state ? loactoin.state : "/");
       })
       .catch((error) => {
-        // An error occurred during logout
-        alert("Login failed. Error: " + error.message  );
+        // An error occurred during login
+        Swal.fire({
+          icon: "error",
+          title: "oops",
+          text: error.message, 
+          footer: '<a href="">Why do I have this issue?</a>',
+        });
       });
+
  
   };
 

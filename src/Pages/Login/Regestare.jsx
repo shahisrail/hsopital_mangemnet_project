@@ -2,7 +2,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
-
+import Swal from "sweetalert2";
 
 const Regestare = () => {
   // use context 
@@ -20,15 +20,28 @@ const Regestare = () => {
     console.log(name, photo, email, password);
 
     // create user
-    createUser(email, password)
-      .then(() => {
-        // regestare was successful
-        alert("regestare  successful");
-      })
-      .catch((error) => {
-        // An error occurred during logout
-        alert("regestare  failed. Error: " + error.message);
-      });
+    
+    
+    
+     createUser(email, password)
+       .then(() => {
+         // regetare was successful
+         Swal.fire({
+           icon: "success",
+           title: "wow great complete your regestratoin",
+         });
+         
+       })
+       .catch((error) => {
+         // An error occurred during regestare
+         Swal.fire({
+           icon: "error",
+           title: "oops",
+           text: error.message,
+           footer: '<a href="">Why do I have this issue?</a>',
+         });
+       });
+
   };
   return (
     <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">

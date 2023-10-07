@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const Nav = () => {
   const { user, logout } = useContext(AuthContext);
@@ -8,12 +9,21 @@ const Nav = () => {
   const handelSignout = () => {
     logout()
       .then(() => {
-        // Logout was successful
-        alert("Logout successful");
+        // logut was successful
+        Swal.fire({
+          icon: "success",
+          title: "wow great your logout",
+
+        });
       })
       .catch((error) => {
         // An error occurred during logout
-        alert("Logout failed. Error: " + error.message);
+        Swal.fire({
+          icon: "error",
+          title: "oops",
+          text: error.message,
+          footer: '<a href="">Why do I have this issue?</a>',
+        });
       });
   };
 

@@ -6,12 +6,18 @@ import Login from "../Pages/Login/Login";
 import Regestare from "../Pages/Login/Regestare";
 import ServiceDetails from "../Pages/Home/ServiceDetails";
 import PrivateRoute from "./PrivateRoute";
-
+import Serviceroutes from "../Pages/ServiseRoutes/Serviceroutes";
+import Error from "../Pages/Errorpage/Error";
+import Appointment from "../Pages/Appointment/Appointment";
+import Aboutus from "../Pages/About/Aboutus";
+import Doctors from "../Pages/Doctors/Doctors";
+import COntact from "../Pages/Contact/COntact";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
@@ -20,14 +26,15 @@ const routes = createBrowserRouter([
       },
       {
         path: "/services",
-        element: <ServicesCard></ServicesCard>,
+        element: <Serviceroutes></Serviceroutes>,
+        loader: () => fetch("/data.json"),
       },
       {
         path: "/login",
         element: <Login></Login>,
       },
       {
-        path: "/regetare",
+        path: "/register",
         element: <Regestare></Regestare>,
       },
       {
@@ -38,6 +45,30 @@ const routes = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () => fetch("/data.json"),
+      },
+
+      {
+        path: "/appointment",
+        element: (
+          <PrivateRoute>
+            <Appointment></Appointment>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/doctor.json"),
+      },
+      {
+        path: "/about",
+        element: <Aboutus></Aboutus>,
+      },
+      {
+        path: "/Docotrs",
+        element: <Doctors></Doctors>,
+        loader: () => fetch("/doctor.json"),
+      },
+      {
+        path: "/contact",
+        element: <COntact></COntact>
+        
       },
     ],
   },

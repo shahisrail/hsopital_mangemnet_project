@@ -3,36 +3,42 @@
     "id": 1,
     "category": "Neurology",
     "details": "Our neurology department offers expert care for conditions related to the nervous system. We have a team of experienced neurologists dedicated to providing comprehensive neurological care ",
-    "image": "/images/neurology.jpg"
+    "overview" :"A neurologist is a medical doctor with specialized training in diagnosing, treating, and managing disorders of the brain and nervous system including, but not limited to, Alzheimer’s disease, amyotrophic lateral sclerosis (ALS), concussion, epilepsy, migraine, multiple sclerosis, Parkinson’s disease, and stroke.A child or pediatric, neurologist specializes in the diagnosis and treatment of neurologic disorders in children from the neonatal period through adolescence. Some of the conditions overlap with those seen by adult neurologists, and others are unique to this younger population. Child neurologists treat many of the same common conditions found in adults such as migraine, epilepsy, stroke, and Tourette’s and are also trained in conditions related to neurogenetics and developmental problems.",
+    "image":"https://i.imgur.com/Uy7o0fi.jpg"
   },
   {
     "id": 2,
     "category": "Cardiology",
     "details": "We provide advanced cardiology services to keep your heart healthy and strong. Our cardiology department offers a wide range of diagnostic and treatment options for heart-related conditions.",
-    "image": "/images/cardiology.jpg"
+    "overview":"Cardiology (from Ancient Greek καρδίᾱ (kardiā) 'heart', and -λογία (-logia) 'study') is the study of the heart. Cardiology is a branch of medicine that deals with disorders of the heart and the cardiovascular system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease, and electrophysiology. Physicians who specialize in this field of medicine are called cardiologists, a specialty of internal medicine. Pediatric cardiologists are pediatricians who specialize in cardiology. Physicians who specialize in cardiac surgery are called cardiothoracic surgeons or cardiac surgeons, a specialty of general surgeryll cardiologists in the branch of medicine study the disorders of the heart, but the study of adult and child heart disorders each require different training pathways. Therefore, an adult cardiologist (often simply called 'cardiologist') is inadequately trained to take care of children, and pediatric cardiologists are not trained to treat adult heart disease. Surgical aspects are not included in cardiology and are in the domain of cardiothoracic surgery. For example, coronary artery bypass surgery (CABG), cardiopulmonary bypass and valve replacement are surgical procedures performed by surgeons, not cardiologists. However, some minimally invasive procedures such as cardiac catheterization and pacemaker implantation are performed by cardiologists who have additional training in non-surgical interventions (interventional cardiology and electrophysiology respectively)",
+    "image": "https://i.imgur.com/ra4FG01.jpg"
   },
   {
     "id": 3,
     "category": "Pathology",
     "details": "Our pathology lab offers diagnostic services for a wide range of medical tests and examinations. We ensure accurate and timely results for all your diagnostic needs.",
-    "image": "/images/pathology.jpg"
+    "overview":"Pathology is the study of the causes and effects of disease or injury.[1] The word pathology also refers to the study of disease in general, incorporating a wide range of biology research fields and medical practices. However, when used in the context of modern medical treatment, the term is often used in a narrower fashion to refer to processes and tests that fall within the contemporary medical field of 'general pathology', an area which includes a number of distinct but inter-related medical specialties that diagnose disease, mostly through analysis of tissue and human cell samples. Idiomatically, 'a pathology' may also refer to the predicted or actual progression of particular diseases (as in the statement 'the many different forms of cancer have diverse pathologies', in which case a more proper choice of word would be 'pathophysiologies', and the affix pathy is sometimes used to indicate a state of disease in cases of both physical ailment (as in cardiomyopathy) and psychological conditions (such as psychopathy).[2] A physician practicing pathology is called a pathologist.As a field of general inquiry and research, pathology addresses components of disease: cause, mechanisms of development (pathogenesis), structural alterations of cells (morphologic changes), and the consequences of changes (clinical manifestations).",
+    "image": "https://i.imgur.com/ohtg7Zj.jpg"
   },
   {
     "id": 4,
     "category": "Ophthalmology",
     "details": "We specialize in eye care, offering comprehensive services for eye-related issues. Our ophthalmologists are dedicated to preserving and improving your vision.",
-    "image": "/images/ophthalmology.jpg"
+    "overview":"An ophthalmologist is a physician who undergoes subspecialty training in medical and surgical eye care.[3] Following a medical degree, a doctor specialising in ophthalmology must pursue additional postgraduate residency training specific to that field. This may include a one-year integrated internship that involves more general medical training in other fields such as internal medicine or general surgery. Following residency, additional specialty training (or fellowship) may be sought in a particular aspect of eye pathology.[4]Ophthalmologists prescribe medications to treat ailments, such as eye diseases, implement laser therapy, and perform surgery when needed.[5] Ophthalmologists provide both primary and specialty eye care - medical and surgical.[5] Most ophthalmologists participate in academic research on eye diseases at some point in their training and many include research as part of their career.[6] Ophthalmology has always been at the forefront of medical research with a long history of advancement and innovation in eye care.[7",
+    "image": "https://i.imgur.com/rjxva8a.jpg"
   },
   {
     "id": 5,
     "category": "Dermatology",
     "details": "Our dermatology department provides expert care for skin and hair conditions. We have experienced dermatologists who can help you achieve healthy and radiant skin.",
-    "image": "/images/dermatology.jpg"
+    "overview":"After earning a medical degree (M.D. or D.O.), the length of training in the United States for a general dermatologist to be eligible for board certification by the American Academy of Dermatology, American Board of Dermatology, or American Osteopathic Board of Dermatology is four years.[11] This training consists of an initial medical, transitional, surgical, or pediatric intern year followed by a three-year dermatology residency.[2][12][13] Following this training, one- or two-year post-residency fellowships are available in immunodermatology, phototherapy, laser medicine, Mohs micrographic surgery, cosmetic surgery, dermatopathology, or pediatric dermatology. While these dermatology fellowships offer additional subspecialty training, many dermatologists proficiently provide these services without subspecialty fellowship training. For the past several years, dermatology residency positions in the United States have been one of the most competitive to obtain.[14][15][16]According to the American Academy of Dermatology, dermatologists are trained to diagnose and manage over 3,000 distinct skin, hair, and nail conditions across patients spanning various age groups.[17]The United States has been experiencing a national shortage of dermatologists for more than a decade. A study published by the Journal of the American Medical Association reported fewer than 3.4 dermatologists for every 100,000 people.[18]",
+    "image": "https://i.imgur.com/Zta1BpW.jpg"
   },
   {
     "id": 6,
     "category": "Orthopedics",
     "details": "We offer orthopedic services to address musculoskeletal issues and injuries. Our orthopedic specialists provide both surgical and non-surgical solutions to help you regain mobility and reduce pain.",
-    "image": "/images/orthopedics.jpg"
+    "overview":"Orthopedic surgery or orthopedics (alternatively spelt orthopaedics) is the branch of surgery concerned with conditions involving the musculoskeletal system.[1] Orthopedic surgeons use both surgical and nonsurgical means to treat musculoskeletal trauma, spine diseases, sports injuries, degenerative diseases, infections, tumors, and congenital disorders.coined the word in French as orthopédie, derived from the Ancient Greek words ὀρθός orthos ('correct', 'straight') and παιδίον paidion ('child'), and published Orthopedie (translated as Orthopædia: Or the Art of Correcting and Preventing Deformities in Children[2]) in 1741. The word was assimilated into English as orthopædics; the ligature æ was common in that era for ae in Greek- and Latin-based words. As the name implies, the discipline was initially developed with attention to children, but the correction of spinal and bone deformities in all stages of life eventually became the cornerstone of orthopedic practice.[",
+    "image": "https://i.imgur.com/aNLZlOt.jpg"
   }
 ]

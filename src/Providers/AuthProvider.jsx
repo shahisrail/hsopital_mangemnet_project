@@ -4,59 +4,67 @@ import {
   getAuth,
   onAuthStateChanged,
   signInWithEmailAndPassword,
+  signInWithPopup, 
+  GoogleAuthProvider, 
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import app from "../Firebase/Firebase.config";
 
-// creat a contex
 export const AuthContext = createContext(null);
 
 const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loadin ,setLoading] = useState(true)
-
-  // user regestratoin
+  const [loading, setLoading] = useState(true);
 
   const createUser = (email, password) => {
-    setLoading(true)
+    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
-  // user sign in
   const signin = (email, password) => {
-    setLoading(true)
-    return signInWithEmailAndPassword(auth,email, password); 
+    setLoading(true);
+    return signInWithEmailAndPassword(auth, email, password);
   };
+  
+  // user profile update 
 
-  //  user logout
-  const logout = () => {
-    setLoading(true)
+   
+  const signout = () => {
+    setLoading(true);
     return signOut(auth);
   };
 
-  // onAuthchange state
+  const signinWithGoogle = () => {
+    setLoading(true);
+    const provider = new GoogleAuthProvider();
+    return signInWithPopup(auth, provider);
+  };
+
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
-      setLoading(false)
+      setLoading(false);
     });
     return () => {
       unSubscribe();
     };
   }, []);
 
-  const authinfo = {
+  const authInfo = {
     user,
+    loading,
     createUser,
-    logout,
+    signout,
     signin,
-    loadin,
+    signinWithGoogle,
+    
   };
 
   return (
-    <AuthContext.Provider value={authinfo}>{children}</AuthContext.Provider>
+    <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );
 };
 

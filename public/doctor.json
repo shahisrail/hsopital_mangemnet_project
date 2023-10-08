@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. John Smith",
+    "details": "Experienced cardiologist with a focus on heart health.",
+    "image": "https://i.imgur.com/TC5zKpv.jpg",
+    "subjects": ["Cardiology", "Heart Health"]
+  },
+  {
+    "id": 2,
+    "name": "Dr. Sarah Johnson",
+    "details": "Pediatrician specializing in children's healthcare.",
+    "image": "https://i.imgur.com/qX7SbcI.jpg",
+    "subjects": ["Pediatrics", "Child Healthcare"]
+  },
+  {
+    "id": 3,
+    "name": "Dr. Michael Brown",
+    "details": "Orthopedic surgeon treating musculoskeletal issues.",
+    "image": "https://i.imgur.com/Vs6umwq.jpg",
+    "subjects": ["Orthopedics", "Musculoskeletal Health"]
+  },
+  {
+    "id": 4,
+    "name": "Dr. Emily Davis",
+    "details": "Dermatologist providing skincare and dermatology services.",
+    "image": "https://i.imgur.com/wwr55MA.png",
+    "subjects": ["Dermatology", "Skincare"]
+  },
+  {
+    "id": 5,
+    "name": "Dr. Robert Wilson",
+    "details": "Ophthalmologist offering eye care and vision services.",
+    "image": "https://i.imgur.com/IG5cCy0.jpg",
+    "subjects": ["Ophthalmology", "Eye Care"]
+  },
+  {
+    "id": 6,
+    "name": "Dr. Lisa Lee",
+    "details": "Psychiatrist specializing in mental health and counseling.",
+    "image": "https://i.imgur.com/YjH5cjT.jpg",
+    "subjects": ["Psychiatry", "Mental Health"]
+  }
+]

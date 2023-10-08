@@ -2,18 +2,20 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import './Nav.css'
+
+
 
 const Nav = () => {
-  const { user, logout } = useContext(AuthContext);
+  const { user, signout } = useContext(AuthContext);
 
   const handelSignout = () => {
-    logout()
+    signout()
       .then(() => {
         // logut was successful
         Swal.fire({
           icon: "success",
           title: "wow great your logout",
-
         });
       })
       .catch((error) => {
@@ -27,7 +29,11 @@ const Nav = () => {
       });
   };
 
-const userimg = user && user.photo ? user.photo : "/default-user-image.png";
+  const userimg = user && user.photoURL; 
+  console.log(user);
+  
+  const useName = 
+  user && user.displayName 
 
   const navLinks = (
     <>
@@ -43,15 +49,30 @@ const userimg = user && user.photo ? user.photo : "/default-user-image.png";
       <li>
         <NavLink to="/login">Login</NavLink>
       </li>
+      {user && (
+        <li>
+          <NavLink to="/appointment">Appointment</NavLink>
+        </li>
+      )}
+      {user && (
+        <li>
+          <NavLink to="/Docotrs">Doctors</NavLink>
+        </li>
+      )}
+      {user && (
+        <li>
+          <NavLink to="/contact">contact</NavLink>
+        </li>
+      )}
     </>
   );
 
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar fixed-navbar   bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className=" btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -74,27 +95,36 @@ const userimg = user && user.photo ? user.photo : "/default-user-image.png";
               {navLinks}
             </ul>
           </div>
-          <img src="/public/logo-n1.png" alt="" />
+          <img
+            className="w-[80px] md:w-[200px] lg:w-[250px]"
+            src="/public/logo-n1.png"
+            alt=""
+          />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
+          <h1> {useName} </h1>
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src={userimg} alt="User Profile" />
+              <img src={userimg} alt="" />
             </div>
           </label>
           {user ? (
             <>
-              
-              <button onClick={handelSignout} className="btn">
+              <button
+                onClick={handelSignout}
+                className="btn bg-[#62C8BA] font-bold hover:bg-[#0E204D] text-white"
+              >
                 Sign out
               </button>
             </>
           ) : (
             <Link to="/login">
-              <button className="btn">Login</button>
+              <button className="btn text-white font-bold bg-[#62C8BA] hover:bg-[#0E204D]">
+                Login
+              </button>
             </Link>
           )}
         </div>

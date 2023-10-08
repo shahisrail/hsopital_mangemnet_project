@@ -1,13 +1,15 @@
 
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate,  } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import { updateProfile } from "firebase/auth";
 
 const Regestare = () => {
   // use context 
- const { createUser } = useContext(AuthContext);
- 
+  const { createUser, signinWithGoogle,  } = useContext(AuthContext);
+   const navigate = useNavigate();
+   
   const handelresgtare = (e) => {
     e.preventDefault();
     console.log(e.currentTarget);
@@ -17,18 +19,53 @@ const Regestare = () => {
     const photo = form.get("photo");
     const email = form.get("email");
     const password = form.get("password");
+   
     console.log(name, photo, email, password);
 
     // create user
     
     
-    
+    if (
+      !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(
+        password
+      )
+    ) {
+      Swal.fire({
+        icon: "error",
+        title:
+          "Minimum eight characters, at least one letter, one number and one special character",
+      });
+      return;
+    }
      createUser(email, password)
+      .then((result) => {
+        updateProfile(result.user, { displayName: name, photoURL: photo })
+        navigate('/') 
+         // regetare was successful
+         Swal.fire({
+           icon: "success",
+           title: "wow great complete your regestratoin",
+          
+           
+         });
+       
+         
+       })
+       .catch((error) => {
+         // An error occurred during regestare
+         Swal.fire({
+           icon: "error",
+           title: "oops",
+           text: error.message,
+           footer: '<a href="">Why do I have this issue?</a>',
+         });
+       })
        .then(() => {
          // regetare was successful
          Swal.fire({
            icon: "success",
            title: "wow great complete your regestratoin",
+           
          });
          
        })
@@ -41,10 +78,30 @@ const Regestare = () => {
            footer: '<a href="">Why do I have this issue?</a>',
          });
        });
-
-  };
+  };  
+    const handleGoogleLogin = () => {
+      signinWithGoogle()
+        .then(() => {
+          // regetare was successful
+          Swal.fire({
+            icon: "success",
+            title: "wow great complete your regestratoin",
+          });
+        })
+        .catch((error) => {
+          // An error occurred during regestare
+          Swal.fire({
+            icon: "error",
+            title: "oops",
+            text: error.message,
+            footer: '<a href="">Why do I have this issue?</a>',
+          });
+        });
+    }
+    
+  
   return (
-    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+    <div className="w-1/2 mx-auto shadow-lg rounded-3xl my-5 mt-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
       <div>
         <h2 className="text-3xl text-center"> please Registare</h2>
         <form onSubmit={handelresgtare} className="md:3w-3/4  mx-auto lg:w-1/2">
@@ -103,6 +160,14 @@ const Regestare = () => {
           </div>
           <div className="form-control mt-6">
             <button className="btn btn-primary">Registare</button>
+          </div>
+          <div className="form-control mt-6">
+            <button
+              onClick={handleGoogleLogin}
+              className="mx-auto w-[100px]  rounded-full h-[100px]"
+            >
+              <img src="https://i.imgur.com/2q4LyIJ.jpg" alt="" />
+            </button>
           </div>
         </form>
         <p className="text-center mt-5">

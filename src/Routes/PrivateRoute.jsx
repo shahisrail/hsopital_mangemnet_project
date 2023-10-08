@@ -4,12 +4,11 @@ import { Navigate, useLocation } from "react-router-dom";
 import { ThreeCircles } from "react-loader-spinner";
 
 const PrivateRoute = ({children}) => {
-  const { user, loadin } = useContext(AuthContext)
+  const { user, loading } = useContext(AuthContext);
   const  loactoin  = useLocation()
-  if (loadin) {
+  if (loading) {
     return (
       <h2 className="flex justify-center items-center min-h-[60vh]">
-     
         <ThreeCircles
           height="100"
           width="100"

@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 
 const ServiceDetails = () => {
   const service = useLoaderData();
@@ -43,9 +43,11 @@ const ServiceDetails = () => {
                       manage patients with a broad range of medical issues.
                     </p>
                   </div>
-                  <button className="btn m-3 bg-[#62C8BA] font-bold hover:bg-[#0E204D] text-white ">
-                    Make Appointment
-                  </button>
+                  <Link to="/appointment">
+                    <button className="btn m-3 bg-[#62C8BA] font-bold hover:bg-[#0E204D] text-white ">
+                      Make Appointment
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -82,7 +84,6 @@ const ServiceDetails = () => {
                 <h2>our department</h2>
                 <p className="border rounded-3xl text-2xl text-white mt-5 p-3 bg-[#65CCBF]">
                   Neurology
-                  
                 </p>
                 <p className="border rounded-3xl text-2xl text-white mt-5 p-3 bg-[#65CCBF]">
                   Cardiology

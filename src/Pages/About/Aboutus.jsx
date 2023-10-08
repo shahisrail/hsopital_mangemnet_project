@@ -1,10 +1,10 @@
-import React from "react";
+
 
 const Aboutus = () => {
   return (
     <div>
       <div
-        data-aos="flip-left"
+        data-aos="zoom-in-up"
         data-aos-easing="linear"
         data-aos-duration="1000"
         className="hero h-screen"
@@ -19,7 +19,7 @@ const Aboutus = () => {
           data-aos-duration="1000"
           className="hero-content lg:-ml-[700px] mb-24 text-center text-neutral-content"
         >
-          <div  className="max-w-md">
+          <div className="max-w-md">
             <h1 className="mb-5 lg:text-5xl text-[#0E204D]  font-bold">
               Caring For The Health & Well Being Of Family.
             </h1>
@@ -38,7 +38,12 @@ const Aboutus = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-5 gap-3 mt-6 max-w-6xl mx-auto p-5">
+      <div
+        data-aos="zoom-in-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        className="grid grid-cols-5 gap-3 mt-6 max-w-6xl mx-auto p-5"
+      >
         <div className="col-span-2 ">
           <h2 className="text-[#0E204D] font-semibold">
             Our goal is to deliver quality of care in a courteous, respectful,

@@ -9,7 +9,7 @@ const Banner = () => {
           <div
             className="hero min-h-screen"
             style={{
-              backgroundImage: "url('/public/h1_slider1.jpg')",
+              backgroundImage: "url('https://i.imgur.com/GRkuMNA.jpg')",
             }}
           >
             <div
@@ -71,7 +71,7 @@ const Banner = () => {
           <div
             className="hero min-h-screen"
             style={{
-              backgroundImage: "url('/public/h1_slider2.jpg')",
+              backgroundImage: "url('https://i.imgur.com/8cutmQD.jpg')",
             }}
           >
             <div className="bg-opacity-60   text-neutral-content">

@@ -4,6 +4,7 @@ import { Link, useNavigate,  } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
 import { updateProfile } from "firebase/auth";
+import { Helmet } from "react-helmet";
 
 const Regestare = () => {
   // use context 
@@ -101,7 +102,15 @@ const Regestare = () => {
     
   
   return (
-    <div className="w-1/2 mx-auto shadow-lg rounded-3xl my-5 mt-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+    <div
+      className="w-1/2 mx-auto shadow-lg rounded-3xl my-5 mt-5"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
+      <Helmet>
+        <title>Registare</title>
+      </Helmet> 
       <div>
         <h2 className="text-3xl text-center"> please Registare</h2>
         <form onSubmit={handelresgtare} className="md:3w-3/4  mx-auto lg:w-1/2">

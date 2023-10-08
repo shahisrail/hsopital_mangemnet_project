@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Doctors from "../Doctors/Doctors";
+import { Helmet } from "react-helmet";
 
 const Appointment = () => {
   return (
@@ -11,6 +12,9 @@ const Appointment = () => {
           backgroundImage: "url(https://i.imgur.com/8H71va0.jpg)",
         }}
       >
+        <Helmet>
+          <title>Appointment</title>
+        </Helmet>
         <div className="hero-overlay bg-opacity-60"></div>
         <div
           data-aos="fade-up"
@@ -34,7 +38,7 @@ const Appointment = () => {
       </div>
       <Doctors></Doctors>
 
-      <div className="p-5 bg-base-100 shadow-xl w-10/12 mx-auto flex rounded-3xl -mt-10">
+      <div className="p-5 bg-base-100 shadow-xl w-10/12 mx-auto flex rounded-3xl flex-col md:flex-row -mt-10">
         <div
           data-aos="fade-up"
           data-aos-easing="linear"
@@ -46,7 +50,7 @@ const Appointment = () => {
             Please feel welcome to contact our friendly reception staff with any
             general or medical enquiry. Our doctors will receive or return any
             urgent calls.
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 className="border rounded-3xl text-center p-2"
                 type="text"

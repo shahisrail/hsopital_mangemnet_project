@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet";
 
 
 const COntact = () => {
   return (
     <div>
+      <Helmet>
+        <title>Contact</title>
+      </Helmet>
       <h3 className="text-center text-4xl">Contact US </h3>
       <div data-aos="zoom-in" className="container my-24 mx-auto md:px-6">
         <section className="mb-32">

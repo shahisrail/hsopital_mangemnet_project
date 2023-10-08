@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 
@@ -5,6 +6,7 @@ const ServicesCard = ({ services }) => {
   const { category, details, id, image } = services;
   return (
     <div data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1000">
+      
       <div className="relative flex  px-2 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div className="relative mx-4 mt-0 h-50 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
           <img

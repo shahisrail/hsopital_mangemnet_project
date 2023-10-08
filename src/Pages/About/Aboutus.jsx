@@ -1,8 +1,13 @@
+import { Helmet } from "react-helmet";
 
 
 const Aboutus = () => {
   return (
     <div>
+      <Helmet>
+        <title>About</title>
+      </Helmet>
+      
       <div
         data-aos="zoom-in-up"
         data-aos-easing="linear"
@@ -42,7 +47,7 @@ const Aboutus = () => {
         data-aos="zoom-in-up"
         data-aos-easing="linear"
         data-aos-duration="1000"
-        className="grid grid-cols-5 gap-3 mt-6 max-w-6xl mx-auto p-5"
+        className="grid md:grid-cols-5 gap-3 mt-6 max-w-6xl mx-auto p-5"
       >
         <div className="col-span-2 ">
           <h2 className="text-[#0E204D] font-semibold">

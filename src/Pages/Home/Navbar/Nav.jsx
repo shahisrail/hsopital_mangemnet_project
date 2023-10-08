@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Providers/AuthProvider";
 import Swal from "sweetalert2";
 import './Nav.css'
+import { Helmet } from "react-helmet";
 
 
 
@@ -29,8 +30,9 @@ const Nav = () => {
       });
   };
 
-  const userimg = user && user.photoURL; 
-  console.log(user);
+  const userimg =
+    user && user.photoURL ? user.photoURL : "https://i.imgur.com/6yCMVKZ.jpg";
+  
   
   const useName = 
   user && user.displayName 
@@ -69,6 +71,9 @@ const Nav = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
       <div className="navbar fixed-navbar   bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">

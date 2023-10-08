@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
   const { signin, signinWithGoogle } = useContext(AuthContext);
@@ -52,8 +53,16 @@ const Login = () => {
   };
 
   return (
-    <div className="w-1/2 mx-auto shadow-lg rounded-3xl"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
-      <div >
+    <div
+      className="w-1/2 mx-auto shadow-lg rounded-3xl"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
+      <Helmet> 
+        <title>Login</title>
+      </Helmet> 
+      <div>
         <h2 className="text-3xl text-center">Please Login</h2>
         <form onSubmit={handleLogin} className="md:w-3/4 mx-auto lg:w-1/2">
           <div className="form-control">

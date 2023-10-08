@@ -1,9 +1,13 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const Doctorscard = ({ doctor }) => {
   const { name, image, subjects } = doctor;
   return (
     <div data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1500">
+      <Helmet>
+        <title>Doctors</title>
+      </Helmet>
       <div
         className="card 
        bg-base-100 h-full  shadow-xl"

@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../layouts/Root";
 import Home from "../Pages/Home/Home";
-import ServicesCard from "../Pages/Home/ServicesCard";
+import ServicesCard from "../Pages/Home/ServicesCard";  
 import Login from "../Pages/Login/Login";
 import Regestare from "../Pages/Login/Regestare";
 import ServiceDetails from "../Pages/Home/ServiceDetails";

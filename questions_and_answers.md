@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: C
+#### Answer: A
 
-<i> Declared a variable name gretting but not assaign value object is empty object than output Uundefined </i>
+<i> greeting, but there is a typo when assigning an empty object to greetign. Despite the typo, JavaScript will implicitly create a global variable named greetign and assign an empty object to it. As a result, when you  </i>
 
 
 </p>
@@ -123,7 +123,7 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: C
+#### Answer: B
 
 <i>The code defines an array nums containing four numbers [0, 1, 2, 3]. It then uses the forEach method to iterate over each element in the array. For each element , it checks if num is a truthy value (since 0 is considered falsy in JavaScript, it will not increment the count in that case). The numbers 1, 2, and 3 are all truthy values, so the count variable is incremented for each of these values.</i>
 

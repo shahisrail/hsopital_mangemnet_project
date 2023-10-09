@@ -4,7 +4,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
 import {  updateProfile } from "firebase/auth";
 import { Helmet } from "react-helmet";
-
+import { FaGoogle } from "react-icons/fa";
 const Regestare = () => {
   // use context
   const { user,setUser, createUser, signinWithGoogle } = useContext(AuthContext);
@@ -92,7 +92,10 @@ const Regestare = () => {
         <title>Registare</title>
       </Helmet>
       <div>
-        <h2 className="text-3xl text-center mt-24 md:mt-20  lg:mt-16"> please Registare</h2>
+        <h2 className="text-3xl text-center mt-24 md:mt-20  lg:mt-16">
+          {" "}
+          please Registare
+        </h2>
         <form onSubmit={handelresgtare} className="md:3w-3/4  mx-auto lg:w-1/2">
           <div className="form-control">
             <label className="label">
@@ -153,9 +156,11 @@ const Regestare = () => {
           <div className="form-control mt-6">
             <button
               onClick={handleGoogleLogin}
-              className="mx-auto w-[100px]  rounded-full h-[100px]"
+              className="mx-auto w-[200px]  rounded-full h-[100px]"
             >
-              <img src="https://i.imgur.com/2q4LyIJ.jpg" alt="" />
+              <button   className="btn font-medium ">
+                Login with <FaGoogle className="text-blue bg-white"></FaGoogle>
+              </button>
             </button>
           </div>
         </form>

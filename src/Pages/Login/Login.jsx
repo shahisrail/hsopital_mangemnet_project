@@ -3,6 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet";
+import { FaGoogle } from "react-icons/fa";
+
 
 const Login = () => {
   const { signin, signinWithGoogle } = useContext(AuthContext);
@@ -59,11 +61,13 @@ const Login = () => {
       data-aos-easing="linear"
       data-aos-duration="1000"
     >
-      <Helmet> 
+      <Helmet>
         <title>Login</title>
-      </Helmet> 
+      </Helmet>
       <div>
-        <h2 className="text-3xl text-center mt-24 md:mt-20 lg:mt-16">Please Login</h2>
+        <h2 className="text-3xl text-center mt-24 md:mt-20 lg:mt-16">
+          Please Login
+        </h2>
         <form onSubmit={handleLogin} className="md:w-3/4 mx-auto lg:w-1/2">
           <div className="form-control">
             <label className="label">
@@ -101,9 +105,9 @@ const Login = () => {
         <div className="form-control mt-6">
           <button
             onClick={handleGoogleLogin}
-            className="mx-auto w-[100px]  rounded-full h-[100px]"
+            className="mx-auto w-[200px]  rounded-full h-[100px]"
           >
-            <img src="https://i.imgur.com/2q4LyIJ.jpg" alt="" />
+            <button className="btn font-medium ">Login with <FaGoogle></FaGoogle  > </button>
           </button>
         </div>
         <p className="text-center mt-5">

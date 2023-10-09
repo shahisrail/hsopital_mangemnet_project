@@ -33,12 +33,12 @@ const Aboutus = () => {
               solutions, specializing in medical services for treatment of
               medical infrastructure.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+         
           </div>
         </div>
       </div>
       <div className="max-w-6xl mx-auto mt-5 ">
-        <h2 className="text-5xl">
+        <h2 className=" text-2xl p-5 md:text-5xl  md:p-2">
           Improving The Quality Of Your <br /> Life Through Better Health.
         </h2>
       </div>

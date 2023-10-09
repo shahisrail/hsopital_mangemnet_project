@@ -54,7 +54,7 @@ const Login = () => {
 
   return (
     <div
-      className="w-1/2 mx-auto shadow-lg rounded-3xl"
+      className=" md:w-1/2 p-3 mx-auto shadow-lg rounded-3xl"
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-duration="1000"
@@ -63,7 +63,7 @@ const Login = () => {
         <title>Login</title>
       </Helmet> 
       <div>
-        <h2 className="text-3xl text-center mt-16">Please Login</h2>
+        <h2 className="text-3xl text-center mt-24 md:mt-20 lg:mt-16">Please Login</h2>
         <form onSubmit={handleLogin} className="md:w-3/4 mx-auto lg:w-1/2">
           <div className="form-control">
             <label className="label">
@@ -107,7 +107,7 @@ const Login = () => {
           </button>
         </div>
         <p className="text-center mt-5">
-          Don't have an account?
+          Dont have an account?
           <Link className="text-blue-600 font-bold" to="/register">
             Register
           </Link>

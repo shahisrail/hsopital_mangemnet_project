@@ -6,7 +6,7 @@ const PacageCard = ({ pacage }) => {
     <div data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1000">
       
       <section>
-        <div className="relative items-center w-full mx-auto md:px-12 lg:px-16 max-w-7xl">
+        <div className="relative items-center w-full mt-20 mx-auto md:px-12 lg:px-16 max-w-7xl">
           <div>
             <div className="relative p-10 space-y-12 overflow-hidden lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8 rounded-xl">
               <div className="relative flex flex-col p-8 bg-white">

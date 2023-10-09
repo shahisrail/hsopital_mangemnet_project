@@ -50,7 +50,7 @@ const Banner = () => {
                     />
                     <img
                       className=" w-16 h-16 md:w-24 md:h-24 rounded-full bg-white p-3"
-                      src="/public/service5.png"
+                      src="https://i.imgur.com/lgAiyj4.png"
                       alt=""
                     />
                   </div>

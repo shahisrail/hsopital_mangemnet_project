@@ -30,11 +30,7 @@ const routes = createBrowserRouter([
         element: <Serviceroutes></Serviceroutes>,
         loader: () => fetch("/data.json"),
       },
-      {
-        path: "/pacage",
-        element: <Pacages></Pacages>,
-        loader: () => fetch("/Pacage.json"),
-      },
+
       {
         path: "/login",
         element: <Login></Login>,
@@ -74,6 +70,11 @@ const routes = createBrowserRouter([
       {
         path: "/contact",
         element: <COntact></COntact>,
+      },
+      {
+        path: "/pacage",
+        element: <Pacages></Pacages>,
+        loader: () => fetch("/Pacage.json"),
       },
     ],
   },

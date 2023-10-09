@@ -107,7 +107,7 @@ const Nav = () => {
           </div>
           <img
             className="w-[80px] md:w-[200px] lg:w-[250px]"
-            src="/public/logo-n1.png"
+            src="https://i.imgur.com/Z5misJF.png"
             alt=""
           />
         </div>

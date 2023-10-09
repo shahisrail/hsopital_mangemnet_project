@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Link, useLoaderData, useParams } from "react-router-dom";
 
 const ServiceDetails = () => {
@@ -34,7 +34,7 @@ const ServiceDetails = () => {
                   </div>
                   <div>
                     <p className=" font-semibold  ml-4 text-[#0E204D] p-10 -mt-10">
-                      We conduct a range of tests to help us work out why you're
+                      We conduct a range of tests to help us work out why youre
                       not feeling well and determine the right treatment for
                       you.
                     </p>
@@ -42,7 +42,9 @@ const ServiceDetails = () => {
                       Our expert doctors, nurses and allied health professionals
                       manage patients with a broad range of medical issues.
                     </p>
-                    <p className="font-bold text-black text-2xl">price: {aservice.price} </p>
+                    <p className="font-bold text-black text-2xl">
+                      price: {aservice.price}{" "}
+                    </p>
                   </div>
                   <Link to="/appointment">
                     <button className="btn m-3 bg-[#62C8BA] font-bold hover:bg-[#0E204D] text-white ">
@@ -82,24 +84,24 @@ const ServiceDetails = () => {
                 data-aos-duration="1500"
                 className="border rounded-xl bg-[#DDF7F5] p-5"
               >
-                <h2>our department</h2>
+                <h2>our feathures</h2>
                 <p className="border rounded-3xl text-2xl text-white mt-5 p-3 bg-[#65CCBF]">
-                  Neurology
+                  Health & Wellness Seminar
                 </p>
                 <p className="border rounded-3xl text-2xl text-white mt-5 p-3 bg-[#65CCBF]">
-                  Cardiology
+                  Community Blood Drive
                 </p>
                 <p className="border rounded-3xl text-2xl text-white mt-5 p-3 bg-[#65CCBF]">
-                  Pathology
+                  Pediatric Health Fair
                 </p>
                 <p className="border rounded-3xl text-2xl text-white mt-5 p-3 bg-[#65CCBF]">
-                  Ophthalmology
+                  Cancer Awareness Walk
                 </p>
                 <p className="border rounded-3xl text-2xl text-white mt-5 p-3 bg-[#65CCBF]">
-                  Dermatology
+                  Mental Health Symposium
                 </p>
                 <p className="border rounded-3xl text-2xl text-white mt-5 p-3 bg-[#65CCBF]">
-                  Orthopedics
+                  Healthy Cooking Workshop
                 </p>
               </div>
               <div
@@ -139,7 +141,7 @@ const ServiceDetails = () => {
                 data-aos-duration="1500"
                 className="   rounded-3xl p-10 mt-5"
                 style={{
-                  backgroundImage: 'url("/public/Doctor_02.jpg")',
+                  backgroundImage: 'url("https://i.imgur.com/CM6T6uN.jpg")',
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",

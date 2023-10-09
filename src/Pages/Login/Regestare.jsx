@@ -24,18 +24,18 @@ const Regestare = () => {
 
     // create user
 
-    if (
-      !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$/.test(
-        password
-      )
-    ) {
-      Swal.fire({
-        icon: "error",
-        title:
-          "Minimum Six characters, at least one letter, one number and one special character",
-      });
-      return;
-    }
+      if (
+        !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$/.test(
+          password
+        )
+      ) {
+        Swal.fire({
+          icon: "error",
+          title:
+            "Minimum Six characters, at least one letter, one number and one special character",
+        });
+        return;
+      }
     createUser(email, password)
       .then((result) => {
         updateProfile(result.user, { displayName: name, photoURL: photo }).then(() => {
@@ -83,7 +83,7 @@ const Regestare = () => {
 
   return (
     <div
-      className="w-1/2 mx-auto shadow-lg rounded-3xl my-5 mt-5"
+      className=" md:w-1/2 p-3   mx-auto shadow-lg rounded-3xl my-5 mt-5"
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-duration="1000"
@@ -92,7 +92,7 @@ const Regestare = () => {
         <title>Registare</title>
       </Helmet>
       <div>
-        <h2 className="text-3xl text-center mt-16"> please Registare</h2>
+        <h2 className="text-3xl text-center mt-24 md:mt-20  lg:mt-16"> please Registare</h2>
         <form onSubmit={handelresgtare} className="md:3w-3/4  mx-auto lg:w-1/2">
           <div className="form-control">
             <label className="label">

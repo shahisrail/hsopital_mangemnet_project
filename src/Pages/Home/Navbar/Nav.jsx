@@ -63,7 +63,12 @@ const Nav = () => {
       )}
       {user && (
         <li>
-          <NavLink to="/contact">contact</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
+        </li>
+      )}
+      {user && (
+        <li>
+          <NavLink to="/pacage">Package</NavLink>
         </li>
       )}
     </>

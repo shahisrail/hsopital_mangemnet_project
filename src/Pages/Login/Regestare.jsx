@@ -1,106 +1,86 @@
-
 import { useContext } from "react";
-import { Link, useNavigate,  } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
-import { updateProfile } from "firebase/auth";
+import {  updateProfile } from "firebase/auth";
 import { Helmet } from "react-helmet";
 
 const Regestare = () => {
-  // use context 
-  const { createUser, signinWithGoogle,  } = useContext(AuthContext);
+  // use context
+  const { user,setUser, createUser, signinWithGoogle } = useContext(AuthContext);
    const navigate = useNavigate();
-   
+   const location = useLocation();
   const handelresgtare = (e) => {
     e.preventDefault();
     console.log(e.currentTarget);
     const form = new FormData(e.currentTarget);
-  
+
     const name = form.get("name");
     const photo = form.get("photo");
     const email = form.get("email");
     const password = form.get("password");
-   
+    
     console.log(name, photo, email, password);
 
     // create user
-    
-    
+
     if (
-      !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(
+      !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$/.test(
         password
       )
     ) {
       Swal.fire({
         icon: "error",
         title:
-          "Minimum eight characters, at least one letter, one number and one special character",
+          "Minimum Six characters, at least one letter, one number and one special character",
       });
       return;
     }
-     createUser(email, password)
+    createUser(email, password)
       .then((result) => {
-        updateProfile(result.user, { displayName: name, photoURL: photo })
-        navigate('/') 
-         // regetare was successful
-         Swal.fire({
-           icon: "success",
-           title: "wow great complete your regestratoin",
-          
-           
-         });
-       
-         
-       })
-       .catch((error) => {
-         // An error occurred during regestare
-         Swal.fire({
-           icon: "error",
-           title: "oops",
-           text: error.message,
-           footer: '<a href="">Why do I have this issue?</a>',
-         });
-       })
-       .then(() => {
-         // regetare was successful
-         Swal.fire({
-           icon: "success",
-           title: "wow great complete your regestratoin",
-           
-         });
-         
-       })
-       .catch((error) => {
-         // An error occurred during regestare
-         Swal.fire({
-           icon: "error",
-           title: "oops",
-           text: error.message,
-           footer: '<a href="">Why do I have this issue?</a>',
-         });
-       });
-  };  
-    const handleGoogleLogin = () => {
-      signinWithGoogle()
-        .then(() => {
-          // regetare was successful
-          Swal.fire({
-            icon: "success",
-            title: "wow great complete your regestratoin",
-          });
-        })
-        .catch((error) => {
-          // An error occurred during regestare
-          Swal.fire({
-            icon: "error",
-            title: "oops",
-            text: error.message,
-            footer: '<a href="">Why do I have this issue?</a>',
-          });
+        updateProfile(result.user, { displayName: name, photoURL: photo }).then(() => {
+           // regetare was successful
+        Swal.fire({
+          icon: "success",
+          title: "wow great complete your regestratoin",
         });
-    }
-    
-  
+        setUser({ ...user, displayName: name, photoURL: photo });
+        navigate(location?.state ? location.state : "/");
+        })
+
+      })
+      .catch((error) => {
+        // An error occurred during regestare
+        Swal.fire({
+          icon: "error",
+          title: "oops",
+          text: error.message,
+          footer: '<a href="">Why do I have this issue?</a>',
+        });
+      });
+  };
+  const handleGoogleLogin = () => {
+    signinWithGoogle()
+      .then(() => {
+        // regetare was successful
+        
+        Swal.fire({
+          icon: "success",
+          title: "wow great complete your regestratoin",
+        });
+         navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        // An error occurred during regestare
+        Swal.fire({
+          icon: "error",
+          title: "oops",
+          text: error.message,
+          footer: '<a href="">Why do I have this issue?</a>',
+        });
+      });
+  };
+
   return (
     <div
       className="w-1/2 mx-auto shadow-lg rounded-3xl my-5 mt-5"
@@ -110,9 +90,9 @@ const Regestare = () => {
     >
       <Helmet>
         <title>Registare</title>
-      </Helmet> 
+      </Helmet>
       <div>
-        <h2 className="text-3xl text-center"> please Registare</h2>
+        <h2 className="text-3xl text-center mt-16"> please Registare</h2>
         <form onSubmit={handelresgtare} className="md:3w-3/4  mx-auto lg:w-1/2">
           <div className="form-control">
             <label className="label">

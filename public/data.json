@@ -1,44 +1,50 @@
-[
-  {
-    "id": 1,
-    "category": "Neurology",
-    "details": "Our neurology department offers expert care for conditions related to the nervous system. We have a team of experienced neurologists dedicated to providing comprehensive neurological care ",
-    "overview" :"A neurologist is a medical doctor with specialized training in diagnosing, treating, and managing disorders of the brain and nervous system including, but not limited to, Alzheimer’s disease, amyotrophic lateral sclerosis (ALS), concussion, epilepsy, migraine, multiple sclerosis, Parkinson’s disease, and stroke.A child or pediatric, neurologist specializes in the diagnosis and treatment of neurologic disorders in children from the neonatal period through adolescence. Some of the conditions overlap with those seen by adult neurologists, and others are unique to this younger population. Child neurologists treat many of the same common conditions found in adults such as migraine, epilepsy, stroke, and Tourette’s and are also trained in conditions related to neurogenetics and developmental problems.",
-    "image":"https://i.imgur.com/Uy7o0fi.jpg"
-  },
-  {
-    "id": 2,
-    "category": "Cardiology",
-    "details": "We provide advanced cardiology services to keep your heart healthy and strong. Our cardiology department offers a wide range of diagnostic and treatment options for heart-related conditions.",
-    "overview":"Cardiology (from Ancient Greek καρδίᾱ (kardiā) 'heart', and -λογία (-logia) 'study') is the study of the heart. Cardiology is a branch of medicine that deals with disorders of the heart and the cardiovascular system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease, and electrophysiology. Physicians who specialize in this field of medicine are called cardiologists, a specialty of internal medicine. Pediatric cardiologists are pediatricians who specialize in cardiology. Physicians who specialize in cardiac surgery are called cardiothoracic surgeons or cardiac surgeons, a specialty of general surgeryll cardiologists in the branch of medicine study the disorders of the heart, but the study of adult and child heart disorders each require different training pathways. Therefore, an adult cardiologist (often simply called 'cardiologist') is inadequately trained to take care of children, and pediatric cardiologists are not trained to treat adult heart disease. Surgical aspects are not included in cardiology and are in the domain of cardiothoracic surgery. For example, coronary artery bypass surgery (CABG), cardiopulmonary bypass and valve replacement are surgical procedures performed by surgeons, not cardiologists. However, some minimally invasive procedures such as cardiac catheterization and pacemaker implantation are performed by cardiologists who have additional training in non-surgical interventions (interventional cardiology and electrophysiology respectively)",
-    "image": "https://i.imgur.com/ra4FG01.jpg"
-  },
-  {
-    "id": 3,
-    "category": "Pathology",
-    "details": "Our pathology lab offers diagnostic services for a wide range of medical tests and examinations. We ensure accurate and timely results for all your diagnostic needs.",
-    "overview":"Pathology is the study of the causes and effects of disease or injury.[1] The word pathology also refers to the study of disease in general, incorporating a wide range of biology research fields and medical practices. However, when used in the context of modern medical treatment, the term is often used in a narrower fashion to refer to processes and tests that fall within the contemporary medical field of 'general pathology', an area which includes a number of distinct but inter-related medical specialties that diagnose disease, mostly through analysis of tissue and human cell samples. Idiomatically, 'a pathology' may also refer to the predicted or actual progression of particular diseases (as in the statement 'the many different forms of cancer have diverse pathologies', in which case a more proper choice of word would be 'pathophysiologies', and the affix pathy is sometimes used to indicate a state of disease in cases of both physical ailment (as in cardiomyopathy) and psychological conditions (such as psychopathy).[2] A physician practicing pathology is called a pathologist.As a field of general inquiry and research, pathology addresses components of disease: cause, mechanisms of development (pathogenesis), structural alterations of cells (morphologic changes), and the consequences of changes (clinical manifestations).",
-    "image": "https://i.imgur.com/ohtg7Zj.jpg"
-  },
-  {
-    "id": 4,
-    "category": "Ophthalmology",
-    "details": "We specialize in eye care, offering comprehensive services for eye-related issues. Our ophthalmologists are dedicated to preserving and improving your vision.",
-    "overview":"An ophthalmologist is a physician who undergoes subspecialty training in medical and surgical eye care.[3] Following a medical degree, a doctor specialising in ophthalmology must pursue additional postgraduate residency training specific to that field. This may include a one-year integrated internship that involves more general medical training in other fields such as internal medicine or general surgery. Following residency, additional specialty training (or fellowship) may be sought in a particular aspect of eye pathology.[4]Ophthalmologists prescribe medications to treat ailments, such as eye diseases, implement laser therapy, and perform surgery when needed.[5] Ophthalmologists provide both primary and specialty eye care - medical and surgical.[5] Most ophthalmologists participate in academic research on eye diseases at some point in their training and many include research as part of their career.[6] Ophthalmology has always been at the forefront of medical research with a long history of advancement and innovation in eye care.[7",
-    "image": "https://i.imgur.com/rjxva8a.jpg"
-  },
-  {
-    "id": 5,
-    "category": "Dermatology",
-    "details": "Our dermatology department provides expert care for skin and hair conditions. We have experienced dermatologists who can help you achieve healthy and radiant skin.",
-    "overview":"After earning a medical degree (M.D. or D.O.), the length of training in the United States for a general dermatologist to be eligible for board certification by the American Academy of Dermatology, American Board of Dermatology, or American Osteopathic Board of Dermatology is four years.[11] This training consists of an initial medical, transitional, surgical, or pediatric intern year followed by a three-year dermatology residency.[2][12][13] Following this training, one- or two-year post-residency fellowships are available in immunodermatology, phototherapy, laser medicine, Mohs micrographic surgery, cosmetic surgery, dermatopathology, or pediatric dermatology. While these dermatology fellowships offer additional subspecialty training, many dermatologists proficiently provide these services without subspecialty fellowship training. For the past several years, dermatology residency positions in the United States have been one of the most competitive to obtain.[14][15][16]According to the American Academy of Dermatology, dermatologists are trained to diagnose and manage over 3,000 distinct skin, hair, and nail conditions across patients spanning various age groups.[17]The United States has been experiencing a national shortage of dermatologists for more than a decade. A study published by the Journal of the American Medical Association reported fewer than 3.4 dermatologists for every 100,000 people.[18]",
-    "image": "https://i.imgur.com/Zta1BpW.jpg"
-  },
-  {
-    "id": 6,
-    "category": "Orthopedics",
-    "details": "We offer orthopedic services to address musculoskeletal issues and injuries. Our orthopedic specialists provide both surgical and non-surgical solutions to help you regain mobility and reduce pain.",
-    "overview":"Orthopedic surgery or orthopedics (alternatively spelt orthopaedics) is the branch of surgery concerned with conditions involving the musculoskeletal system.[1] Orthopedic surgeons use both surgical and nonsurgical means to treat musculoskeletal trauma, spine diseases, sports injuries, degenerative diseases, infections, tumors, and congenital disorders.coined the word in French as orthopédie, derived from the Ancient Greek words ὀρθός orthos ('correct', 'straight') and παιδίον paidion ('child'), and published Orthopedie (translated as Orthopædia: Or the Art of Correcting and Preventing Deformities in Children[2]) in 1741. The word was assimilated into English as orthopædics; the ligature æ was common in that era for ae in Greek- and Latin-based words. As the name implies, the discipline was initially developed with attention to children, but the correction of spinal and bone deformities in all stages of life eventually became the cornerstone of orthopedic practice.[",
-    "image": "https://i.imgur.com/aNLZlOt.jpg"
-  }
-]
+  [
+    {
+      "id": 1,
+      "category": "Health & Wellness Seminar",
+      "details": "My Health Coach Program/TrestleTree offers departments a variety of wellness seminar topics presented virtually. Refer to the MyHealthCoach Seminar Topics below for seminar descriptions. Departments interested in arranging a wellness seminar should email Lynn Herbine",
+      "overview": "Scientists have already summed up the results of multiple studies to show that wealthier people live longer, have less chronic disease, and maintain a higher level of function well into their old age. Reduced death rates, a longer life expectancy, and a lower risk of lifestyle conditions modified by income, such as obesity, smoking, hypertension, and asthma, are all concomitant benefits of having a high disposable income.This is explainable in terms of the better living conditions available for the wealthy, coupled with better preventive and therapeutic healthcare, which means they do not become as seriously ill or remain so for as long as those who are poorer. Disability or chronic ill health resulting from such conditions may dog a person throughout life.The effects of poor healthcare due to poverty and social inequalities may extend across generations to affect the unborn and children. For instance, a lack of vaccinations may leave the unborn prone to teratogenic infections such as rubella and measles. Malnutrition during pregnancy may cause low birth weight and developmental defects.",
+      "image": "https://i.imgur.com/6WnBf1o.jpg",
+      "price":"13$"
+    },
+    {
+      "id": 2,
+      "category": "Community Blood Drive",
+      "details": "Through a partnership with more than 40 local hospitals, hosting more than 100 community blood drives each month and providing regular donation opportunities at our local centers, The Community Blood Center is proud to serve patients throughout the Midwest. Most importantly - we couldn't do it without our volunteer blood donors. Thank you for giving the gift of life.",
+      "overview": "About one hour is all it takes to provide the lifesaving gift of blood to patients in our local hospitals. Right here in our community, volunteer blood donors are connecting lives and sharing life through blood donation.Blood donation couldn’t be more important. There is no substitute for blood, so when a local patient is facing cancer treatment, surgical procedures or the uncertainty of a traumatic injury, it’s volunteer donors who help ensure that the blood needed is on hand.And the need is great. Every two seconds, someone in the U.S. needs blood – that’s 35,000 blood donations needed every single day! Volunteer blood donors respond to this need, and for that, we are extremely grateful. To that end, we do all that we can to ensure the best possible experience for our donors.The moment you visit one of our donor centers or blood drives, our courteous, professional staff will work to make your visit brief, comfortable and something you’ll look forward to doing again (in eight weeks, we might add).With your whole blood or platelet donation, your generous gesture could make all the difference for a local patient in need. Schedule your donation today and be a part of someone’s story. Donate today; you’ll save lives tomorrow. ",
+      "image": "https://i.imgur.com/PYMFGwJ.jpg",
+      "price": "15$"
+    },
+    {
+      "id": 3,
+      "category": "Pediatric Health Fair",
+      "details": "Health fairs shouldn’t just target adults but kids, too. Don’t think that parents are your only customer. Theway children react to an institution will affect the parents, says Hallie Bloom, MS, MA, CCLS, director of Child Life at St. Jude Children’s Research Hospital in Memphis, TN.",
+      "overview": "Therefore, health fairs provide an opportunity to help children develop a more positive perspective about health care and have some control that can make a big difference in their behavior the next time they have to go to the doctor, she says. For example, creating a huge medical collage is a way to help children become familiar and comfortable with medical equipment in a nonthreatening environment. They add syringes, cotton swabs, gauze pads, and masks to the huge art project.Providing booths for children at health fairs is a good way to help them become familiar with medical interventions that they may have, agrees Chris Brown, MS, CCLS, director of Child Life and Education at The Children’s Hospital of Philadelphia. One idea she uses at school health fairs is finger casting, where each child gets a plaster cast on his or her finger while learning about the purpose of a cast and how bones heal. If they ever do break a bone and end up in the emergency department, the knowledge empowers them and helps them feel they have control over the situation, she explains.",
+      "image": "https://i.imgur.com/g9woXFE.jpg",
+      "price": "20$"
+    },  
+    {
+      "id": 4,
+      "category": "Cancer Awareness Walk",
+      "details": "The cancer awareness dates found on this page are officially recognized annually as a national or international awareness date or observance. Please note, this list is to raise awareness and share information; it is not a comprehensive list of all cancer awareness dates. If you are aware of any national or international awareness dates or observances, please let us know",
+      "overview": "Cancer is a deadly disease and is struggling hard presently to become the number one killer of our times .The incidence of cancer is increasing. This is because of increasing longevity, changing lifestyle, increasing pollution and many other factors. Three out of every ten people in the world will have cancer in their lives by 2025 .Cancer is increasing in India too and in the next 15 years or so, one out of every six person, will have cancer, which means that at least one member of every family will have a patient suffering from cancer. It is hence imperative that we all know the basics about cancer and its causes, early symptoms and methods of treatment. The study of Cancer is called Oncology,The most common cancers in the world are of Lung, prostrate, colon (large gut), and rectum. In India the three most common cancers in women are of cervix, breast and esophagus (food pipe) and in men, the head and neck region and esophagus are affected by cancer most commonly. Over one third of all the cancers of the head and neck region, of the world affect Indians",
+      "image": "https://i.imgur.com/ySje5fT.jpg",
+      "price": "20$"
+    },
+    {
+      "id": 5,
+      "category": "Mental Health Symposium",
+      "details": "Increasing numbers of students are seeking mental health services, but the demand is outstripping our nation’s universities’ capabilities to deliver the care they need. The result can often be long-wait times or in some cases, unavailability of services. Continued tragic events on campus only serve to reinforce the need for expanded services.",
+      "overview": "As a nation, it is crucial that we come together to help raise the awareness of mental health on college campuses and work together to identify and promulgate best practices and techniques that can be used to help meet the rising demand for mental health, while at the same time, build a culture of early intervention and prevention.Institutions of higher learning face budget limitations, staff shortages, and other challenges in addressing the mental health and wellness of their students. Together, students, health professionals, and campus leadership can build awareness, drive public policy, and build innovative solutions ensure the mental health and wellness of our nation’s college students.The American College Health Association, in partnership with the American College Health Foundation, is pleased to have collaborated with leading mental health and higher education organizations on its inaugural symposium. The goal of the symposium was to bring together university leaders, mental health providers, public policy leaders, students and philanthropists to begin a national dialogue on developing an actionable blueprint for addressing the mental health crisis on campus.",
+      "image": "https://i.imgur.com/tl5DtRQ.jpg",
+      "price": "33$"
+    },
+    {
+      "id": 6,
+      "category": "Healthy Cooking Workshop",
+      "details": "This little slice of sunshine, inspired by a version from my mates Matt Wilkinson and Sharlee Gibb – which is literally the best we’ve found – is on high rotation at our house come summertime. That’s because it’s just as tasty fridge-cold as it is fresh from the oven. It also gets a big thumbs-up from The Nut, who delights in taking finger-lengths of the slice and turning it into mush between her fists before snuffling..",
+      "overview": "Green Healthy Cooking is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees involves more general medical training in other fields such as internal medicine or general surgery. Following residency, additional specialty training (or fellowship) may be sought in a particular aspect of eye pathology.[4]Ophthalmologists prescribe medications to treat ailments, such as eye diseases, implement laser therapy, and perform surgery when needed.[5] Ophthalmologists provide both primary and specialty eye care - medical and surgical.[5] Most ophthalmologists participate in academic research on eye diseases at some point in their training and many include research as part of their career.[6] Ophthalmology has always been at the forefront of medical research with a long history of advancement and innovation in eye care.[7",
+      "image": "https://i.imgur.com/XetzHsE.jpg",
+      "price": "17$"
+    }
+  ]

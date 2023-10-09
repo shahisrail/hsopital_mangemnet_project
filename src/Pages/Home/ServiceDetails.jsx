@@ -42,6 +42,7 @@ const ServiceDetails = () => {
                       Our expert doctors, nurses and allied health professionals
                       manage patients with a broad range of medical issues.
                     </p>
+                    <p className="font-bold text-black text-2xl">price: {aservice.price} </p>
                   </div>
                   <Link to="/appointment">
                     <button className="btn m-3 bg-[#62C8BA] font-bold hover:bg-[#0E204D] text-white ">

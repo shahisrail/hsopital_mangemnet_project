@@ -7,7 +7,7 @@ import {
   signInWithPopup, 
   GoogleAuthProvider, 
   signOut,
-  updateProfile,
+  
 } from "firebase/auth";
 import app from "../Firebase/Firebase.config";
 
@@ -60,7 +60,7 @@ const AuthProvider = ({ children }) => {
     signout,
     signin,
     signinWithGoogle,
-    
+    setUser,
   };
 
   return (

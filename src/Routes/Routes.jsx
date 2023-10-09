@@ -12,6 +12,7 @@ import Appointment from "../Pages/Appointment/Appointment";
 import Aboutus from "../Pages/About/Aboutus";
 import Doctors from "../Pages/Doctors/Doctors";
 import COntact from "../Pages/Contact/COntact";
+import Pacages from "../Pages/Pacages/Pacages";
 
 const routes = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const routes = createBrowserRouter([
         path: "/services",
         element: <Serviceroutes></Serviceroutes>,
         loader: () => fetch("/data.json"),
+      },
+      {
+        path: "/pacage",
+        element: <Pacages></Pacages>,
+        loader: () => fetch("/Pacage.json"),
       },
       {
         path: "/login",
@@ -67,8 +73,7 @@ const routes = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <COntact></COntact>
-        
+        element: <COntact></COntact>,
       },
     ],
   },

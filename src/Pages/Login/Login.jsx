@@ -63,7 +63,7 @@ const Login = () => {
         <title>Login</title>
       </Helmet> 
       <div>
-        <h2 className="text-3xl text-center">Please Login</h2>
+        <h2 className="text-3xl text-center mt-16">Please Login</h2>
         <form onSubmit={handleLogin} className="md:w-3/4 mx-auto lg:w-1/2">
           <div className="form-control">
             <label className="label">

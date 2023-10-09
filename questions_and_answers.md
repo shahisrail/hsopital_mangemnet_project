@@ -123,7 +123,7 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: B
+#### Answer: C
 
 <i>The code defines an array nums containing four numbers [0, 1, 2, 3]. It then uses the forEach method to iterate over each element in the array. For each element , it checks if num is a truthy value (since 0 is considered falsy in JavaScript, it will not increment the count in that case). The numbers 1, 2, and 3 are all truthy values, so the count variable is incremented for each of these values.</i>
 
